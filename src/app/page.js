@@ -1,4 +1,6 @@
 import Image from "next/image";
+import { ModeToggle } from "./components/shared/ModeToggle";
+import Alert from "./components/shared/Alert";
 
 export default function Home() {
   return (
@@ -51,6 +53,9 @@ export default function Home() {
           </a>
         </div>
       </main>
+      <div>
+        <Alert />
+      </div>
       <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
         <a
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
@@ -97,6 +102,7 @@ export default function Home() {
           />
           Go to nextjs.org →
         </a>
+        <ModeToggle />
       </footer>
     </div>
   );
