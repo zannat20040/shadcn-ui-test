@@ -1,7 +1,7 @@
 import Image from "next/image";
-import SGElOGO from "/public/logo/SGE-Logo.png";
 import LargeScreenMenu from "./LargeScreenMenu";
 import SmallScreenMenu from "./SmallScreenMenu";
+import SGElOGO from "/public/logo/SGE-Logo.png";
 
 export default function Navbar() {
   const menuStyle = ` font-medium `;
@@ -17,7 +17,7 @@ export default function Navbar() {
               src={SGElOGO}
               width={250}
               height={100}
-sizes="(max-width: 640px) 160px, 250px"   
+              className="sm:w-[250px] w-[160px]"
               alt="shabuj global logo"
             />
           </section>
