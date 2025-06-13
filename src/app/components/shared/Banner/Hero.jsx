@@ -1,5 +1,6 @@
 import Image from "next/image";
 import BookingComp from "./BookingComp";
+import HeroButton from "../HeroButton";
 
 export default function Hero() {
   return (
@@ -29,8 +30,11 @@ export default function Hero() {
             Dream Big, Study Abroad
           </span>
           <h1 className="text-3xl md:text-4xl font-bold leading-tight mb-6 mt-3 dark:text-blue-50">
-            From <span className="text-blue-800 dark:text-blue-700">Admission to Visa </span>—
-            We’ve Got You Covered!
+            From{" "}
+            <span className="text-blue-800 dark:text-blue-700">
+              Admission to Visa{" "}
+            </span>
+            — We’ve Got You Covered!
           </h1>
           <p className="text-lg mb-8 dark:text-blue-50">
             Don’t let paperwork slow you down. We help students study abroad
@@ -43,13 +47,12 @@ export default function Hero() {
             {/* Book Free Consultation */}
             <BookingComp />
             {/* Apply now */}
-            <button
-              className="bg-transparent text-blue-900 px-6 py-3 rounded-full transition-all duration-500  dark:text-blue-50
-            hover:bg-blue-900 hover:text-white hover:px-10 font-medium hover:font-normal
-            peer-hover:bg-transparent peer-hover:text-blue-900"
-            >
-              Apply now
-            </button>
+            <HeroButton
+              label={"Apply now"}
+              style={`bg-transparent text-blue-900   dark:text-blue-50
+             font-medium hover:font-normal
+            peer-hover:bg-transparent peer-hover:text-blue-900`}
+            />
           </section>
         </section>
       </main>

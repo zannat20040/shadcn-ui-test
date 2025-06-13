@@ -1,9 +1,9 @@
 import { NavList } from "@/app/utils/Navlist";
 import { ChevronDown, Menu } from "lucide-react";
 import Link from "next/link";
-import { ModeToggle } from "../ModeToggle";
 import RegistrationButton from "../RegistrationButton";
 import dynamic from "next/dynamic";
+import ThemeButton from "../ThemeButton";
 const AboutUsMenuComp = dynamic(() => import("./AboutUsMenuComp"));
 const StudyDestiantionMenuComp = dynamic(() =>
   import("./StudyDestiantionMenuComp")
@@ -14,7 +14,7 @@ export default function SmallScreenMenu() {
   return (
     <section className="lg:hidden flex items-center gap-5 overflow-y-auto">
       {/* theme changer */}
-      <ModeToggle />
+      <ThemeButton />
       {/* drawer code */}
       <section className="drawer drawer-end">
         {/* side menu open button */}
