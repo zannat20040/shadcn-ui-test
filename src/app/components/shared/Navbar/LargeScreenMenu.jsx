@@ -19,7 +19,7 @@ export default function LargeScreenMenu({ menuStyle }) {
             Contact Us
           </Link>
           {/* registration button */}
-          <RegistrationButton />
+          <RegistrationButton  label={'Registration'}/>
         </section>
       </section>
     </>

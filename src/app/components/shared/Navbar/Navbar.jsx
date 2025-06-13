@@ -6,7 +6,7 @@ import SGElOGO from "/public/logo/SGE-Logo.png";
 export default function Navbar() {
   const menuStyle = ` font-medium `;
   return (
-    <section className="text-black bg-blue-50 tracking-tighter sticky top-0  left-0 right-0 z-40">
+    <section className="text-black bg-blue-50  sticky top-0  left-0 right-0 z-40">
       <section className="max-w-7xl px-4 mx-auto py-5 text-sm ">
         <section className="flex flex-wrap xl:flex-nowrap items-center justify-between gap-y-2 gap-x-12 w-full">
           {/* logo part */}

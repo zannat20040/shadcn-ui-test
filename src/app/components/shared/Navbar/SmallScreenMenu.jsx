@@ -5,9 +5,10 @@ import { ModeToggle } from "../ModeToggle";
 import RegistrationButton from "../RegistrationButton";
 import dynamic from "next/dynamic";
 const AboutUsMenuComp = dynamic(() => import("./AboutUsMenuComp"));
-const StudyDestiantionMenuComp = dynamic(() => import("./StudyDestiantionMenuComp"));
+const StudyDestiantionMenuComp = dynamic(() =>
+  import("./StudyDestiantionMenuComp")
+);
 const TestPrepMenuComp = dynamic(() => import("./TestPrepMenuComp"));
-
 
 export default function SmallScreenMenu() {
   return (
@@ -37,7 +38,7 @@ export default function SmallScreenMenu() {
           {/* Sidebar content here */}
           <ul className="menu bg-blue-50  min-h-full w-56  sm:w-60 p-4">
             {/* registration btn */}
-            <RegistrationButton />
+            <RegistrationButton label={"Registration"} />
             {/* side menu */}
             <section className="mt-8 flex flex-col gap-y-3">
               {NavList?.map((nav, index) => (

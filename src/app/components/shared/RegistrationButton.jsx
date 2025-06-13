@@ -1,14 +1,12 @@
 import { Button } from "@/components/ui/button";
-import React from "react";
 
-export default function RegistrationButton() {
+export default function RegistrationButton({ label, style, type }) {
   return (
     <Button
-      className={
-        "bg-blue-900 rounded-full px-5 py-5 hover:bg-white border  hover:border-blue-900 duration-500  hover:text-blue-900 tracking-tighter text-white"
-      }
+      type={type ? type : "button"}
+      className={`bg-blue-900 rounded-full px-5 py-5 hover:bg-white border  hover:border-blue-900 duration-500  ${style} hover:text-blue-900 text-white`}
     >
-      Registration
+      {label}
     </Button>
   );
 }
