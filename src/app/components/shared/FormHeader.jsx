@@ -6,9 +6,9 @@ export default function FormHeader({
   subtitleStyle,
 }) {
   return (
-    <div className=" px-10">
-      <span className={`${titleStyle} text-xl font-bold text-blue-900 dark:text-white inline-block`}>{title}</span>
-      <span className={`${subtitleStyle} mt-1 mb-6 inline-block`}>{subtitle}</span>
-    </div>
+    <>
+      <span className={`${titleStyle} text-center text-xl font-bold text-blue-900 dark:text-white inline-block w-full`}>{title}</span>
+      <span className={`${subtitleStyle} text-center mt-1 mb-6 inline-block`}>{subtitle}</span>
+    </>
   );
 }

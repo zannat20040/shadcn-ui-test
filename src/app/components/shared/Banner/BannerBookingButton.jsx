@@ -23,7 +23,7 @@ export default function BannerBookingButton() {
       <DialogContent className={'bg-blue-50 dark:bg-gray-900'}>
         <DialogHeader>
           <DialogTitle></DialogTitle>
-          <DialogDescription>
+          <DialogDescription className=" px-10 ">
             <FormHeader
               title={"Start Your Study Abroad Journey Here"}
               subtitle={
