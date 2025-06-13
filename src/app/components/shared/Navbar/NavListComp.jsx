@@ -29,7 +29,7 @@ export default function NavListComp({ menuStyle }) {
           {/* Nested Routes */}
           {nav.nestedRoutes && (
             <section
-              className="fixed top-[142px] xl:top-[96px] left-0 w-full bg-white drop-shadow-xl 
+              className="fixed top-[125px] xl:top-[81px] left-0 w-full bg-white drop-shadow-xl 
                      overflow-hidden transition-all duration-300 ease-in-out
                      max-h-0 opacity-0 translate-y-2
                      group-hover:max-h-[500px] group-hover:opacity-100 group-hover:translate-y-0"

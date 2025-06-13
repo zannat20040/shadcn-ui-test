@@ -9,7 +9,7 @@ const StudyDestiantionMenuComp = dynamic(() => import("./StudyDestiantionMenuCom
 const TestPrepMenuComp = dynamic(() => import("./TestPrepMenuComp"));
 
 
-export default function SmallScreenMenu({ menuStyle }) {
+export default function SmallScreenMenu() {
   return (
     <section className="lg:hidden flex items-center gap-5 overflow-y-auto">
       {/* theme changer */}
