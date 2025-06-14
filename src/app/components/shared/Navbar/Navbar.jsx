@@ -10,14 +10,12 @@ export default function Navbar() {
       <section className="max-w-7xl px-4 mx-auto py-5 text-sm ">
         <section className="flex flex-wrap xl:flex-nowrap items-center justify-between gap-y-2 gap-x-12 w-full">
           {/* logo part */}
-          <section>
+          <section className="sm:w-[250px] w-[160px]">
             <Image
               loading="eager"
               placeholder="blur"
               src={SGElOGO}
-              width={250}
-              height={100}
-              className="sm:w-[250px] w-[160px]"
+              responsive='true'
               alt="shabuj global logo"
             />
           </section>

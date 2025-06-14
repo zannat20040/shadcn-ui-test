@@ -4,11 +4,10 @@ import React from "react";
 
 export default function TestPrepMenuComp({ nestedRoute }) {
   return (
-    <Link href={nestedRoute?.path}>
+    <Link href={nestedRoute?.path} className="max-w-[150px] max-h-[100px]">
       <Image
         loading="lazy"
-        width={150}
-        height={100}
+        responsive="true"
         src={nestedRoute?.logo}
         alt={nestedRoute?.title}
       />
