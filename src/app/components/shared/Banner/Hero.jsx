@@ -1,6 +1,7 @@
 import Image from "next/image";
 import BookingComp from "./BookingComp";
 import HeroButton from "../HeroButton";
+import BannerTextAnimation from "./BannerTextAnimation";
 
 export default function Hero() {
   return (
@@ -20,14 +21,16 @@ export default function Hero() {
         sizes="(max-width: 768px) 100vw, 100vw"
       />
 
+      {/* banner overlay section */}
       <main className="absolute left-0 top-0 h-full w-full md:w-full z-[1] pointer-events-none">
         <section className="w-full h-full bg-gradient-to-r from-blue-50 dark:from-gray-800 via-blue-50 dark:via-gray-800/80 to-transparent "></section>
       </main>
 
+      {/* banner text section */}
       <main className="relative z-[2] max-w-7xl mx-auto px-6 pb-32 sm:pt-24 pt-16">
         <section className="max-w-2xl">
           <span className="bg-blue-600/10 dark:bg-blue-900/90 text-blue-800 dark:text-blue-50 text-xs tracking-wide py-1 px-4 rounded">
-            Dream Big, Study Abroad
+            One Dream. Many Destinations{" "}
           </span>
           <h1 className="text-3xl md:text-4xl font-bold leading-tight mb-6 mt-3 dark:text-blue-50">
             From{" "}
@@ -56,6 +59,9 @@ export default function Hero() {
           </section>
         </section>
       </main>
+
+      {/* banner animation */}
+      <BannerTextAnimation />
     </main>
   );
 }
