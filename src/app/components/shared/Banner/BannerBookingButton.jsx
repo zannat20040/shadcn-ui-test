@@ -20,7 +20,7 @@ export default function BannerBookingButton() {
         {" "}
         Book Free Consultation
       </DialogTrigger>
-      <DialogContent className={'bg-blue-50 dark:bg-gray-900'}>
+      <DialogContent className={"bg-blue-50 dark:bg-gray-900"}>
         <DialogHeader>
           <DialogTitle></DialogTitle>
           <DialogDescription className=" px-10 ">

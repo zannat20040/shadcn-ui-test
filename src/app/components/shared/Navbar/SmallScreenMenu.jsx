@@ -12,7 +12,7 @@ const TestPrepMenuComp = dynamic(() => import("./TestPrepMenuComp"));
 
 export default function SmallScreenMenu() {
   return (
-    <section className="lg:hidden flex items-center gap-5 overflow-y-auto">
+    <section className="lg:hidden flex items-center gap-5 overflow-y-auto text-base">
       {/* theme changer */}
       <ThemeButton />
       {/* drawer code */}
