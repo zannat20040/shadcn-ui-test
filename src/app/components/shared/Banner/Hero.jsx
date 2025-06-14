@@ -39,7 +39,7 @@ export default function Hero() {
             </span>
             — We’ve Got You Covered!
           </h1>
-          <p className="text-lg mb-8 dark:text-blue-50">
+          <p className="text-base md:text-lg mb-8 dark:text-blue-50">
             Don’t let paperwork slow you down. We help students study abroad
             with easy support for applications, visas, and test prep.Your
             journey starts now — stop dreaming, start doing!
