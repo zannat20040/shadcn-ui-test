@@ -7,11 +7,12 @@ export default function NotFound() {
     <div className=" container mx-auto px-4 bg-whtie min-h-screen my-auto  flex flex-col items-center justify-center p-6">
       <div className=" w-full max-w-md ">
         <Image
+          placeholder="blur"
+          loading="lazy"
           src={notfoundImg}
           alt="404 Illustration"
           responsive="true"
           objectFit="contain"
-          priority
         />
       </div>
 
@@ -28,7 +29,7 @@ export default function NotFound() {
         <RegistrationButton
           label={"Go back home"}
           style={`
-          bg-blue-900 dark:bg-violet-400
+          bg-blue-900 dark:bg-violet-400 dark:hover:bg-blue-50
           border-blue-900 dark:!border-violet-400
           hover:text-blue-900 dark:hover:!text-violet-400
          `}
